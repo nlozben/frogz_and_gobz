@@ -15,9 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Settings.unity
     guid: 5f7d5ab3322924bcb8e17815f8ed4f61
   - enabled: 1
-    path: Assets/Scenes/Scene_Roll_Character.unity.unity
-    guid: ad72bbf046f164b808bad56c4f9fca7d
+    path: Assets/Scenes/Create Character.unity
+    guid: 2ac38c2b65b304562939da1e24ab48e9
   - enabled: 1
-    path: Assets/Scenes/Play Game.unity
-    guid: 81fc582ccfd084f4185657146734dabb
+    path: Assets/Scenes/Game Scene.unity
+    guid: 4d94eb49b0b7f48b3b25babae34eac4a
   m_configObjects: {}

@@ -5,25 +5,9 @@ using UnityEngine;
 public class Global_CharacterData : MonoBehaviour
 {
     public string characterName;
-    public float Ability_Strength;
-    public float Ability_Dexterity;
-    public float Ability_Constitution;
-    public float Ability_Intelligence;
-    public float Ability_Wisdom;
-    public float Ability_Charisma;
-    public string race;
-    public string characterClass;
-    public string alignment;
-    public int currentXP;
-    public int maxXP;
-    public int currentHP;
-    public int maxHP;
-    public int armorClass;
-    public int walkingSpeed;
-    public int runningSpeed;
-    public int jumpHeight;
-    public List<int> items;
-
+    public string difficulty;
+    public int color;
+    
     public bool characterCreated;
 
     public static Global_CharacterData Instance {get; private set;}

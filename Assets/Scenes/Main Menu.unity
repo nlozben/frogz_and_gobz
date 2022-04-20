@@ -193,7 +193,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Roll Character
+  m_Text: Create Character
 --- !u!222 &259270469
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -443,7 +443,7 @@ GameObject:
   - component: {fileID: 515313538}
   - component: {fileID: 515313537}
   m_Layer: 5
-  m_Name: Roll Character Button
+  m_Name: Create Character Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -593,24 +593,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterName: 
-  Ability_Strength: 0
-  Ability_Dexterity: 0
-  Ability_Constitution: 0
-  Ability_Intelligence: 0
-  Ability_Wisdom: 0
-  Ability_Charisma: 0
-  race: 
-  characterClass: 
-  alignment: 
-  currentXP: 0
-  maxXP: 0
-  currentHP: 0
-  maxHP: 0
-  armorClass: 0
-  walkingSpeed: 0
-  runningSpeed: 0
-  jumpHeight: 0
-  items: 
+  difficulty: 
+  color: 0
   characterCreated: 0
 --- !u!4 &525407697
 Transform:
@@ -1375,8 +1359,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
-  m_RaycastTarget: 1
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:

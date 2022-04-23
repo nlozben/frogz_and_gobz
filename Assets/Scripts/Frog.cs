@@ -25,6 +25,9 @@ public class Frog : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
         }
         if (isTouchingFront() && Random.Range(0, 3) == 2) {
+            Vector3 localScale = transform.localScale;
+            localScale.x *= -1f;
+            transform.localScale = localScale;
             speed = -speed;
         }
         else if (isTouchingFront() && isGrounded()) {
@@ -39,6 +42,11 @@ public class Frog : MonoBehaviour
 
     private bool isTouchingFront() {
         return Physics2D.OverlapCircle(frontCheck.position, 0.2f, groundLayer);
+    }
+
+    public void getCaught() {
+        Destroy(gameObject);
+        Global_CharacterData.Instance.frogsCollected++;
     }
 
 }

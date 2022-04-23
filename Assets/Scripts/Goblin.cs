@@ -4,12 +4,16 @@ using UnityEngine;
 
 public class Goblin : MonoBehaviour
 {
-    float speed = 5f;
+    float speed = 8f;
     float jumpingPower = 20f;
     public Rigidbody2D rb;
     public GameObject player;
 
     int health = 100;
+
+    void Start() {
+        player = GameObject.Find("Player");
+    }
 
     void Update()
     {
@@ -24,6 +28,7 @@ public class Goblin : MonoBehaviour
 
     public void takeDamage (int damage) {
         health -= damage;
+        FindObjectOfType<AudioManager>().play("Hurt");
         StartCoroutine(damageVisual(Color.red));
         if (health <= 0) {
             Destroy(gameObject);

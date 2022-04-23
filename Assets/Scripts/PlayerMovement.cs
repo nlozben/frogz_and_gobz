@@ -37,6 +37,7 @@ public class PlayerMovement : MonoBehaviour
         animator.SetFloat("speed", Mathf.Abs(horizontal));
         if (Input.GetButtonDown("Jump") && isGrounded()) {
             rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
+            FindObjectOfType<AudioManager>().play("Jump");
         }
 
         if (Input.GetButtonDown("Jump") && rb.velocity.y > 0f) {
@@ -54,6 +55,7 @@ public class PlayerMovement : MonoBehaviour
         }
         
         if (wallJumping) {
+            FindObjectOfType<AudioManager>().play("Jump");
             rb.velocity = new Vector2(xWallForce * -horizontal, yWallForce);
         }
         Flip();

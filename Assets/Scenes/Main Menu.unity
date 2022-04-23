@@ -595,6 +595,8 @@ MonoBehaviour:
   characterName: 
   difficulty: 
   color: 0
+  frogsCollected: 0
+  goblinsKilled: 0
   characterCreated: 0
 --- !u!4 &525407697
 Transform:
@@ -1419,6 +1421,16 @@ MonoBehaviour:
     volume: 0.3
     source: {fileID: 0}
     loop: 1
+  - name: Jump
+    clip: {fileID: 8300000, guid: 1b9c01b507a0e49058d807635dc49129, type: 3}
+    volume: 0.65
+    source: {fileID: 0}
+    loop: 0
+  - name: Hurt
+    clip: {fileID: 8300000, guid: 3081195c8e44a4399aabe738538aacd3, type: 3}
+    volume: 0.5
+    source: {fileID: 0}
+    loop: 0
 --- !u!4 &1619839913
 Transform:
   m_ObjectHideFlags: 0

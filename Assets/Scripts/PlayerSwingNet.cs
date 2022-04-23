@@ -9,12 +9,17 @@ public class PlayerSwingNet : MonoBehaviour
     public Transform netPoint;
     public float netRange;
     public LayerMask frogs;
+    public float swingRate = 2f;
+    float nextSwingTime = 0f;
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Fire2")) {
-            swing();
+        if (Time.time >= nextSwingTime) {
+            if (Input.GetButtonDown("Fire2")) {
+                swing();
+                nextSwingTime = Time.time + 1f / swingRate;
+            }
         }
     }
 
@@ -22,9 +27,13 @@ public class PlayerSwingNet : MonoBehaviour
         animator.SetTrigger("swing");
         Collider2D[] caughtFrogs = Physics2D.OverlapCircleAll(netPoint.position, netRange, frogs);
         foreach (Collider2D frog in caughtFrogs) {
-            Destroy(gameObject);
-            Global_CharacterData.Instance.frogsCollected++;
+            frog.GetComponent<Frog>().getCaught();
         }
+    }
+
+    void OnDrawGizmosSelected() {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(netPoint.position, netRange);
     }
 
 }

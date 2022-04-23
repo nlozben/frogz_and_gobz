@@ -7,6 +7,8 @@ public class Revolver : MonoBehaviour
     
     public Transform revolver;
     public GameObject bullet;
+    public float shootRate = 2f;
+    float nextShootTime = 0f;
 
     PlayerMovement playerMovement;
     
@@ -19,17 +21,20 @@ public class Revolver : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-         Vector2 revolverPosition = transform.position;
-         Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-         Vector2 direction = mousePosition - revolverPosition;
-         if (playerMovement.isFacingRight) {
+        Vector2 revolverPosition = transform.position;
+        Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector2 direction = mousePosition - revolverPosition;
+        if (playerMovement.isFacingRight) {
             transform.right = -direction;
-         }
-         else {
+        }
+        else {
             transform.right = direction;
-         }
-         if (Input.GetButtonDown("Fire1")) {
-            shoot();
+        }
+        if (Time.time >= nextShootTime) {
+            if (Input.GetButtonDown("Fire1")) {
+                shoot();
+                nextShootTime = Time.time + 1f / shootRate;
+            }
         }
     }
 

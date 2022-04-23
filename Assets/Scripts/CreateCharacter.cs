@@ -8,7 +8,7 @@ public class CreateCharacter : MonoBehaviour
 {
     public InputField characterName;
     public Dropdown difficulty;
-    public Slider color;
+    public Dropdown color;
 
     // Start is called before the first frame update
     void Start()
@@ -29,7 +29,7 @@ public class CreateCharacter : MonoBehaviour
     void saveCharacter() {
         Global_CharacterData.Instance.characterName = characterName.text.ToString();
         Global_CharacterData.Instance.difficulty = difficulty.options[difficulty.value].text;
-        Global_CharacterData.Instance.color = (int) color.value;
+        Global_CharacterData.Instance.color = difficulty.options[difficulty.value].text;
     }
     
     public void createCharacter() {

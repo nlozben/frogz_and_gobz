@@ -13,7 +13,7 @@ public class WorldGenerator : MonoBehaviour
     public TileBase[] tiles;
     public Tilemap worldTilemap;
     int[,] world;
-    public float seed;
+    float seed;
 
     [Header("Cave Parameters")]
     public int minCaveWidth;
@@ -25,12 +25,23 @@ public class WorldGenerator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        seed = Random.Range(1,10000000);
         world = generateArray(width, height, true);
         world = terrainGenerator(world);
         world = verticalTunnel(world, minCaveWidth, maxCaveWidth, maxCaveChange, roughness, curvyness, width/2);
         world = verticalTunnel(world, minCaveWidth, maxCaveWidth, maxCaveChange, roughness, curvyness, width/4);
         world = verticalTunnel(world, minCaveWidth, maxCaveWidth, maxCaveChange, roughness, curvyness, 3*width/4);
         world = horizontalTunnel(world);
+        for (int x = 0; x < width; x++){
+            for (int y = 0; y < height; y++){
+                if (x == 0 || y == 0 || x == width - 1) {
+                    world[x,y] = 3;
+                }
+                if (((x > 0 && x < 5) || (x < width - 1 && x > width - 6)) && y > height/15 - 4) {
+                    world[x,y] = 0;
+                }
+            }
+        }
         renderWorld(world, worldTilemap);
     }
 
@@ -73,7 +84,6 @@ public class WorldGenerator : MonoBehaviour
 
     public int[,] terrainGenerator(int[,] world) {
         int perlinHeight;
-        //float seed = Random.Range(1,10000000);
         for (int x = 0; x < width; x++){
             perlinHeight = Mathf.RoundToInt(Mathf.PerlinNoise(x/smoothness, seed) * height/3);
             for (int y = 0; y < perlinHeight; y++){
@@ -93,7 +103,6 @@ public class WorldGenerator : MonoBehaviour
 
     public int[,] verticalTunnel(int[,] world, int minPathWidth, int maxPathWidth, int maxPathChange, int roughness, int curvyness, int x) {
         int tunnelWidth = 1;
-        //int x = width/2;
         System.Random rand = new System.Random(seed.GetHashCode());
 
         for (int i = -tunnelWidth; i <= tunnelWidth; i++) {

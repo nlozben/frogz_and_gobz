@@ -15,6 +15,14 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask groundLayer;
     public Animator animator;
 
+    bool isTouchingFront;
+    public Transform frontCheck;
+    bool wallJumping;
+    public float xWallForce;
+    public float yWallForce;
+    public float wallJumpTime;
+
+
     
     // Start is called before the first frame update
     void Start()
@@ -33,6 +41,20 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetButtonDown("Jump") && rb.velocity.y > 0f) {
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
+        }
+
+        isTouchingFront = Physics2D.OverlapCircle(frontCheck.position, 0.2f, groundLayer);
+        if (isTouchingFront && !isGrounded() && horizontal != 0f) {
+            rb.velocity = new Vector2(rb.velocity.x, Mathf.Clamp(rb.velocity.y, 0f, float.MaxValue));
+        }
+        
+        if (Input.GetButtonDown("Jump") && isTouchingFront && !isGrounded() && horizontal != 0f) {
+            wallJumping = true;
+            Invoke("setWallJumpToFalse", wallJumpTime);
+        }
+        
+        if (wallJumping) {
+            rb.velocity = new Vector2(xWallForce * -horizontal, yWallForce);
         }
         Flip();
     }
@@ -54,7 +76,8 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-
-
+    void setWallJumpToFalse() {
+        wallJumping = false;
+    }
 
 }

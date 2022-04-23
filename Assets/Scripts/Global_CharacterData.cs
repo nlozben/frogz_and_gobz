@@ -6,7 +6,9 @@ public class Global_CharacterData : MonoBehaviour
 {
     public string characterName;
     public string difficulty;
-    public int color;
+    public string color;
+    public int frogsCollected = 0;
+    public int goblinsKilled = 0;
     
     public bool characterCreated;
 

@@ -7,7 +7,7 @@ public class Revolver : MonoBehaviour
     
     public Transform revolver;
     public GameObject bullet;
-    public float shootRate = 2f;
+    public float shootRate = 1f;
     float nextShootTime = 0f;
 
     PlayerMovement playerMovement;
@@ -40,6 +40,7 @@ public class Revolver : MonoBehaviour
 
     void shoot() {
         Instantiate(bullet, revolver.position, revolver.rotation);
+        FindObjectOfType<AudioManager>().play("Gunshot");
     }
 
 }

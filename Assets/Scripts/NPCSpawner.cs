@@ -9,19 +9,32 @@ public class NPCSpawner : MonoBehaviour
     public GameObject frogPrefab;
     public float goblinInterval = 4f;
     public float frogInterval = 2f;
+    IEnumerator goblinSpawn;
+    IEnumerator frogSpawn;
+    PlayerHealth playerHealth;
     
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(spawnNPC(frogInterval, frogPrefab));
-        StartCoroutine(spawnNPC(goblinInterval, goblinPrefrab));
+        playerHealth = GameObject.Find("Player").GetComponent<PlayerHealth>();
+        goblinSpawn = spawnNPC(goblinInterval, goblinPrefrab);
+        frogSpawn = spawnNPC(frogInterval, frogPrefab);
+        StartCoroutine(goblinSpawn);
+        StartCoroutine(frogSpawn);
+    }
+
+    void Update() {
+        if (playerHealth.isDead() || playerHealth.isWin()) {
+            StopCoroutine(goblinSpawn);
+            StopCoroutine(frogSpawn);
+        }
     }
 
     private IEnumerator spawnNPC(float interval, GameObject NPC) {
         yield return new WaitForSeconds(interval);
         int spawnY;
         if (Random.Range(0,2) == 1) {
-            spawnY = 110;
+            spawnY = 140;
         }
         else {
             spawnY = 33;

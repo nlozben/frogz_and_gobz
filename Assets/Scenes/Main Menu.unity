@@ -563,55 +563,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 515313535}
   m_CullTransparentMesh: 1
---- !u!1 &525407695
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 525407697}
-  - component: {fileID: 525407696}
-  m_Layer: 0
-  m_Name: Global Character Data
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &525407696
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 525407695}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 635ba41f6d38646c993ad32b6897ccd3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  characterName: 
-  difficulty: 
-  color: 0
-  frogsCollected: 0
-  goblinsKilled: 0
-  characterCreated: 0
---- !u!4 &525407697
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 525407695}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 416, y: 242, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &590123796
 GameObject:
   m_ObjectHideFlags: 0
@@ -783,7 +734,7 @@ GameObject:
   - component: {fileID: 805659004}
   - component: {fileID: 805659003}
   m_Layer: 5
-  m_Name: Setting Button
+  m_Name: Controls Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -903,6 +854,85 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 805659001}
   m_CullTransparentMesh: 1
+--- !u!1 &834482528
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 834482531}
+  - component: {fileID: 834482530}
+  - component: {fileID: 834482529}
+  m_Layer: 5
+  m_Name: Warning Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &834482529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 834482528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.3962264, g: 0.016820924, b: 0.030815758, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Create a character to play game
+--- !u!222 &834482530
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 834482528}
+  m_CullTransparentMesh: 1
+--- !u!224 &834482531
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 834482528}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1467627980}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 3.4, y: -41}
+  m_SizeDelta: {x: 208.6764, y: 24.2734}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1181875108
 GameObject:
   m_ObjectHideFlags: 0
@@ -933,6 +963,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playGame: {fileID: 0}
+  warning: {fileID: 834482529}
 --- !u!4 &1181875110
 Transform:
   m_ObjectHideFlags: 0
@@ -1340,6 +1371,7 @@ RectTransform:
   - {fileID: 515313536}
   - {fileID: 1410072410}
   - {fileID: 1289838519}
+  - {fileID: 834482531}
   m_Father: {fileID: 1707053896}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1431,6 +1463,26 @@ MonoBehaviour:
     volume: 0.5
     source: {fileID: 0}
     loop: 0
+  - name: Swish
+    clip: {fileID: 8300000, guid: 0672290d15f57428ca0c19ee495702b1, type: 3}
+    volume: 0.3
+    source: {fileID: 0}
+    loop: 0
+  - name: Gunshot
+    clip: {fileID: 8300000, guid: e3025fef1529746a69498894fdc7308e, type: 3}
+    volume: 0.1
+    source: {fileID: 0}
+    loop: 0
+  - name: Goblin
+    clip: {fileID: 8300000, guid: 8e92d44c42a474f648aeea436e6fc4fb, type: 3}
+    volume: 0.3
+    source: {fileID: 0}
+    loop: 1
+  - name: Frog
+    clip: {fileID: 8300000, guid: a10f6c45c45424d668b2d0d2b0af9d46, type: 3}
+    volume: 0.3
+    source: {fileID: 0}
+    loop: 1
 --- !u!4 &1619839913
 Transform:
   m_ObjectHideFlags: 0
@@ -1440,6 +1492,55 @@ Transform:
   m_GameObject: {fileID: 1619839911}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1700818958
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1700818960}
+  - component: {fileID: 1700818959}
+  m_Layer: 0
+  m_Name: Global Data
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1700818959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1700818958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 635ba41f6d38646c993ad32b6897ccd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: 
+  difficulty: 
+  color: 
+  frogsCollected: 0
+  goblinsKilled: 0
+  characterCreated: 0
+--- !u!4 &1700818960
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1700818958}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1269.7557, y: 601.70825, z: -6349.2886}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1748,7 +1849,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Settings
+  m_Text: Controls
 --- !u!222 &1828998834
 CanvasRenderer:
   m_ObjectHideFlags: 0

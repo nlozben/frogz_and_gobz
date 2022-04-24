@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/About.unity
     guid: 878df3ad8320249ed802dd45d9485bd4
   - enabled: 1
-    path: Assets/Scenes/Settings.unity
+    path: Assets/Scenes/Controls.unity
     guid: 5f7d5ab3322924bcb8e17815f8ed4f61
   - enabled: 1
     path: Assets/Scenes/Create Character.unity
@@ -20,4 +20,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Game Scene.unity
     guid: 4d94eb49b0b7f48b3b25babae34eac4a
+  - enabled: 1
+    path: Assets/Scenes/Lose.unity
+    guid: c95276d58479e4d1ab440cd42c3f3cbc
+  - enabled: 1
+    path: Assets/Scenes/Win.unity
+    guid: 7269c0db3a1f847f1a0cad87f1f82c8a
   m_configObjects: {}

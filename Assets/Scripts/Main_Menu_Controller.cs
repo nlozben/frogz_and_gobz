@@ -8,6 +8,7 @@ public class Main_Menu_Controller : MonoBehaviour
 {
     
     public Button playGame;
+    public Text warning;
     
     // Start is called before the first frame update
     void Start()
@@ -19,7 +20,9 @@ public class Main_Menu_Controller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Global_CharacterData.Instance.characterCreated) {
+            Destroy(warning);
+        }
     }
 
     public void loadAbout() {

@@ -18,6 +18,7 @@ public class PlayerSwingNet : MonoBehaviour
         if (Time.time >= nextSwingTime) {
             if (Input.GetButtonDown("Fire2")) {
                 swing();
+                FindObjectOfType<AudioManager>().play("Swish");
                 nextSwingTime = Time.time + 1f / swingRate;
             }
         }
@@ -30,10 +31,4 @@ public class PlayerSwingNet : MonoBehaviour
             frog.GetComponent<Frog>().getCaught();
         }
     }
-
-    void OnDrawGizmosSelected() {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(netPoint.position, netRange);
-    }
-
 }

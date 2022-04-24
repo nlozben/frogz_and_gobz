@@ -13,7 +13,7 @@ TextureImporter:
     second: delete
   - first:
       213: -212545651032484168
-    second: GoblinWalk_1
+    second: delete
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -139,12 +139,12 @@ TextureImporter:
       name: delete
       rect:
         serializedVersion: 2
-        x: 1139
-        y: 488
+        x: 1211
+        y: 387
         width: 49
         height: 70
-      alignment: 9
-      pivot: {x: 0.43944192, y: 0.45760933}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

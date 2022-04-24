@@ -8,16 +8,21 @@ public class Goblin : MonoBehaviour
     float jumpingPower = 20f;
     public Rigidbody2D rb;
     public GameObject player;
+    PlayerHealth playerHealth;
 
     int health = 100;
 
     void Start() {
         player = GameObject.Find("Player");
+        playerHealth = GameObject.Find("Player").GetComponent<PlayerHealth>();
     }
 
     void Update()
     {
         followPlayer();
+        if (playerHealth.isDead() || playerHealth.isWin()) {
+            Destroy(gameObject);
+        }
     }
 
     private IEnumerator damageVisual(Color color) {

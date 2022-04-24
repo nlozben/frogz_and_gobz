@@ -11,11 +11,12 @@ public class Frog : MonoBehaviour
     public Transform groundCheck;
     public Transform frontCheck;
     public LayerMask groundLayer;
+    PlayerHealth playerHealth;
     
     // Start is called before the first frame update
     void Start()
     {
-        
+        playerHealth = GameObject.Find("Player").GetComponent<PlayerHealth>();
     }
 
     // Update is called once per frame
@@ -34,6 +35,9 @@ public class Frog : MonoBehaviour
             rb.velocity = new Vector2(speed*3, jumpingPower*4);
         }
         rb.velocity = new Vector2(speed, rb.velocity.y);
+        if (playerHealth.isDead() || playerHealth.isWin()) {
+            Destroy(gameObject);
+        }
     }
 
     private bool isGrounded() {

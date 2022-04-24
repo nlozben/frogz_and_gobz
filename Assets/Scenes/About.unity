@@ -610,9 +610,9 @@ MonoBehaviour:
   m_Text: This game takes place in a world where frogs are loved and goblins are
     hated. You must be the hero that saves all of the frogs from the goblins by catching
     them with your net. Be sure to blast some pesky goblins with your gun along the
-    way! The world is randomly generated with 3 verticle caves and 1 horizontal cave.
+    way! The world is randomly generated with 3 vertical caves and 1 horizontal cave.
     On either end of the map is a tunnel that can be used to climb to the top. Underground
-    their are more frogs to save; however, goblins horde down here as well.
+    there are more frogs to save; however, goblins horde down here as well.
 --- !u!222 &1435386055
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -1,0 +1,6 @@
+This game takes place in a world where frogs are loved and goblins are hated. You must be the hero that saves all of the frogs from the goblins by catching them with your net. Be sure to blast some pesky goblins with your gun along the way! The world is randomly generated with 3 vertical caves and 1 horizontal cave. On either end of the map is a tunnel that can be used to climb to the top. Underground there are more frogs to save; however, goblins horde down here as well.
+Move Left: A or left arrowkey
+Move Right: D or right arrowkey
+Jump: space or up arrowkey (there is wall jumping)
+Use Net: right mouse
+Shoot: left mouse (point with the mouse to aim)

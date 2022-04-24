@@ -1,0 +1,21 @@
+﻿Bibliography
+2D Player Movement In Unity. (n.d.). Www.youtube.com. Retrieved April 23, 2022, from https://youtu.be/K1xZ-rycYY8
+2D Shooting in Unity (Tutorial). (n.d.). Www.youtube.com. Retrieved April 23, 2022, from https://www.youtube.com/watch?v=wkKsl1Mfp5M&t=465s
+bearmetal. (2015, December 16). Grass Tile. OpenGameArt.org. https://opengameart.org/content/grass-tile-0
+Bendux. (n.d.). Smooth Camera Follow In Unity. Www.youtube.com. Retrieved April 23, 2022, from https://youtu.be/ZBj3LBA2vUY
+Brackeys. (2017, May 31). Introduction to AUDIO in Unity. YouTube. https://youtu.be/6OT43pvUyfY
+Brackeys. (2018). 2D Animation in Unity (Tutorial) [YouTube Video]. In YouTube. https://www.youtube.com/watch?v=hkaysu1Z-N8
+donnie9171. (2018, January 29). Gun and bullet. OpenGameArt.org. https://opengameart.org/content/gun-and-bullet
+edomin. (2017, December 14). Colt 1851 Navy. OpenGameArt.org. https://opengameart.org/content/colt-1851-navy
+How to make a 2D Bow and Arrow with UNITY & C#! (n.d.). Www.youtube.com. Retrieved April 23, 2022, from https://www.youtube.com/watch?v=tNwLaGUJTK4&t=139s
+How to make a 2D Wall Jump & Wall Slide using UNITY & C#! (n.d.). Www.youtube.com. Retrieved April 23, 2022, from https://youtu.be/KCzEnKLaaPc
+InanZen. (2013, April 28). Frog animation sprite sheet. OpenGameArt.org. https://opengameart.org/content/frog-animation-sprite-sheet
+MELEE COMBAT in Unity. (n.d.). Www.youtube.com. https://youtu.be/sPiVz1k-fEs
+Procedural patterns to use with Tilemaps - (Part II). (n.d.). Unity Blog. Retrieved April 23, 2022, from https://blog.unity.com/technology/procedural-patterns-to-use-with-tilemaps-part-ii
+Procedural patterns you can use with Tilemaps (Part I). (n.d.). Unity Blog. https://blog.unity.com/technology/procedural-patterns-you-can-use-with-tilemaps-part-i
+RGA-GT. (2019, February 15). The Best of RGA-GT Music Pack. OpenGameArt.org. https://opengameart.org/content/the-best-of-rga-gt-music-pack
+sithoius. (2013, April 22). Rock Tileset. OpenGameArt.org. https://opengameart.org/content/rock-tileset
+Studio, Y. P. (2018, August 18). Ground Tiles. OpenGameArt.org. https://opengameart.org/content/ground-tiles-4
+Unity Tutorial (2021) - Add some VISUAL INDICATORS. (n.d.). Www.youtube.com. Retrieved April 23, 2022, from https://www.youtube.com/watch?v=wuoQqdjaJOc
+Unity Tutorial (2021) - Making an Enemy Spawner. (n.d.). Www.youtube.com. Retrieved April 23, 2022, from https://www.youtube.com/watch?v=SELTWo1XZ0c
+‌

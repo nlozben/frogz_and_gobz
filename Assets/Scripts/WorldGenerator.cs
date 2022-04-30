@@ -34,7 +34,7 @@ public class WorldGenerator : MonoBehaviour
         world = horizontalTunnel(world);
         for (int x = 0; x < width; x++){
             for (int y = 0; y < height; y++){
-                if (x == 0 || y == 0 || x == width - 1) {
+                if (x == 0 || y == 0 || x == width - 1 || y == height - 1) {
                     world[x,y] = 3;
                 }
                 if (((x > 0 && x < 5) || (x < width - 1 && x > width - 6)) && y > height/15 - 4) {

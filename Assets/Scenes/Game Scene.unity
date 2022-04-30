@@ -2274,8 +2274,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: bbe45aa3751f14c2582e6c467f80f7c0, type: 2}
   - {fileID: 11400000, guid: e3991afbd44ed419f9c38e4595998063, type: 2}
   worldTilemap: {fileID: 425476302}
-  minCaveWidth: 10
-  maxCaveWidth: 10
+  minCaveWidth: 7
+  maxCaveWidth: 7
   maxCaveChange: 1
   roughness: 1
   curvyness: 1

@@ -9,6 +9,7 @@ donnie9171. (2018, January 29). Gun and bullet. OpenGameArt.org. https://opengam
 edomin. (2017, December 14). Colt 1851 Navy. OpenGameArt.org. https://opengameart.org/content/colt-1851-navy
 How to make a 2D Bow and Arrow with UNITY & C#! (n.d.). Www.youtube.com. Retrieved April 23, 2022, from https://www.youtube.com/watch?v=tNwLaGUJTK4&t=139s
 How to make a 2D Wall Jump & Wall Slide using UNITY & C#! (n.d.). Www.youtube.com. Retrieved April 23, 2022, from https://youtu.be/KCzEnKLaaPc
+How to make a Health Bar (Unity 2D Tutorial for Beginners). (n.d.). Www.youtube.com. Retrieved April 23, 2022, from https://www.youtube.com/watch?v=Gtw7VyuMdDc&t=130s
 InanZen. (2013, April 28). Frog animation sprite sheet. OpenGameArt.org. https://opengameart.org/content/frog-animation-sprite-sheet
 MELEE COMBAT in Unity. (n.d.). Www.youtube.com. https://youtu.be/sPiVz1k-fEs
 Procedural patterns to use with Tilemaps - (Part II). (n.d.). Unity Blog. Retrieved April 23, 2022, from https://blog.unity.com/technology/procedural-patterns-to-use-with-tilemaps-part-ii
